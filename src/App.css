@@ -1,32 +1,369 @@
-.App {
-  text-align: center;
+html,
+body {
+    font-family: "Helvetica", Arial, sans-serif;
+    margin: 0;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+
+/*------------------------ Section 1 ----------------------------*/
+
+.section-one{
+    background-color: #FFF;
+	padding-top: 10rem;
+    padding-bottom: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.monsoon {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+	padding: 5px;
+    justify-content: center;
+    align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.monsoon img {
+    max-width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.monsoon-text {
+    width: 100%;
+    order: -1;
+    line-height: 1.5em;
+    margin-bottom: 40px;
 }
+
+.monsoon-text p {
+    color: #555454;
+}
+
+/* Responsive */
+
+@media only screen and (min-width: 975px) {
+
+    .section-one {
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+    .monsoon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        max-width: 75%;
+    }
+    .monsoon img {
+        margin-right: 15px;
+    }
+    .monsoon-text {
+        order: 1;
+        min-width: 500px;
+        margin-left: 15px;
+        margin-bottom: 0;
+        padding: 0;
+    }
+
+}
+
+@media (min-width:770px) {
+    .monsoon-text {
+        padding: 0 100px;
+    }
+	
+}
+
+@media only screen and (min-width: 990px) {
+
+    .section-one {
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+    .monsoon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        max-width: 75%;
+    }
+    .monsoon img {
+        margin-right: 20px;
+    }
+    .monsoon-text {
+        order: 1;
+        min-width: 450px;
+        margin-left: 20px;
+        margin-bottom: 0;
+        padding: 0;
+    }
+}
+
+
+
+
+
+
+
+/*------------------------ Section 2 ----------------------------*/
+
+.section-two {
+    background-image: linear-gradient(0deg, #FFFFFF 0%, #818080 50%, #333232 100%);
+    padding-top: 10rem;
+	padding-bottom: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.beams {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    margin-bottom: 5em;
+}
+
+.beams img {
+    max-width: 100%;
+}
+
+.beams-text {
+    width: 100%;
+    order: -1;
+    line-height: 1.4em;
+    margin: 0 0 50px 0;
+}
+
+.beams-text h1 {
+    text-transform: uppercase;
+    margin: 8px 0;
+}
+
+.beams-text p {
+    margin: 0;
+}
+
+.bigPic {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.bigPic img {
+    max-width: 100%;
+}
+
+.bigPic-text {
+    width: 100%;
+    order: -1;
+    line-height: 1.4em;
+    margin: 0 0 60px 0;
+}
+
+.bigPic-text h1 {
+    text-transform: uppercase;
+    margin: 8px 0;
+}
+
+.bigPic-text p {
+    margin: 0;
+}
+
+/* Responsive */
+
+
+@media (min-width:768px) {
+    .beams-text, .bigPic-text{
+        padding: 0 100px;
+    }
+}
+
+
+@media only screen and (min-width: 992px) {
+	
+    .section-two {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .beams, .bigPic {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        max-width: 75%;
+    }
+    .beams img {
+        margin-left: 20px;
+    }
+    .beams-text {
+        margin-right: 20px;
+        padding: 0;
+        max-width: 50%;
+    }
+    .bigPic {
+        max-width: 60%;
+    }
+    .bigPic img {
+        margin-right: 20px;
+    }
+    .bigPic-text {
+		order: 1;
+        margin-left: 20px;
+        padding: 0;
+        min-width: 450px;
+    }
+}
+
+
+
+/*------------------------ Carousel 1 ----------------------------*/
+
+.carousel {
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    color: #FFFFFF;
+	height: 100%;
+}
+
+.bg1{
+	background-image: url(https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/Rp3ZIJe/videoblocks-slightly-toned-blurred-background-of-autumn-park-for-backdrop-prores-footage_r6-55boi1b_thumbnail-full01.png); 
+	background-size: cover;
+}
+
+.bg2{
+	background-image: url(https://ak1.picdn.net/shutterstock/videos/12809741/thumb/1.jpg);
+	background-size: cover;
+}
+
+.bg3{
+	background-image: url(https://media.istockphoto.com/photos/blurred-backgroundabstract-background-with-bokeh-defocused-ligh-picture-id483416992?k=6&m=483416992&s=612x612&w=0&h=eEASdxV0G3OqF0k_IlKjU4FwMuBud231aqMSFu1IAh8=);
+	background-size: cover;
+}
+
+
+.movie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    text-align: center;
+	height: 100%;
+}
+
+
+.carousel-text {
+    color: white;
+    margin-top: 20px;
+}
+
+.button {
+   border: 0px solid #0a3c59;
+   background: #3e779d;
+   background: -webkit-gradient(linear, left top, left bottom, from(#65a9d7), to(#3e779d));
+   background: -webkit-linear-gradient(top, #65a9d7, #3e779d);
+   background: -moz-linear-gradient(top, #65a9d7, #3e779d);
+   background: -ms-linear-gradient(top, #65a9d7, #3e779d);
+   background: -o-linear-gradient(top, #65a9d7, #3e779d);
+   background-image: -ms-linear-gradient(top, #65a9d7 0%, #3e779d 100%);
+   padding: 13px 26px;
+   -webkit-border-radius: 18px;
+   -moz-border-radius: 18px;
+   border-radius: 18px;
+   -webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   -moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   text-shadow: #7ea4bd 0 1px 0;
+   color: #06426c;
+   font-size: 20px;
+   font-family: helvetica, serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+
+
+/* Responsive */
+
+@media only screen and (min-width: 992px) {
+    .carousel {
+        width: 100%;
+		height: 100%;
+    }
+    .container {
+        flex-direction: row;
+        max-width: 100%;
+        color: #FFFFFF;
+		justify-content: center;
+        align-items: center;
+    }
+    .movie {
+        
+        flex-direction: row;
+        max-width: 100%;
+        color: #FFFFFF;
+        text-align: left;
+		justify-content: center;
+        align-items: center;
+    }
+   
+    .carousel-text {
+		flex-direction: column;
+        display: flex;
+        width: 45%;
+        margin: 0 3rem;
+    }
+   
+}
+
+
+.button {
+   border: 0px solid #0a3c59;
+   background: #3baaf4;
+   padding: 12px 25px;
+   -webkit-border-radius: 12px;
+   -moz-border-radius: 12px;
+   border-radius: 12px;
+   color: #fff;
+   font-size: 12px;
+   font-family: helvetica, serif;
+   vertical-align: middle;
+	margin-right: 10px;
+   }
+
+.button1 {
+   border: 1px solid #FFF;
+   background: rgba(113, 198, 255, 0.07);
+   padding: 12px 25px;
+   -webkit-border-radius: 12px;
+   -moz-border-radius: 12px;
+   border-radius: 12px;
+   border-color: #FFF;
+   color: #fff;
+   font-size: 12px;
+   font-family: helvetica, serif;
+   vertical-align: middle;
+	margin-right: 10px;
+   }
